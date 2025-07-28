@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VoltX Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f8f8f8;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-info h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.2rem;
+      color: #111827;
+    }
+    .product-info p {
+      margin: 0;
+      color: #555;
+    }
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VoltX Store</h1>
+    <p>Texnoloji məhsullar və aksesuarlar</p>
+  </header>
+  <main>
+    <section class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x180?text=Məhsul+1" alt="Məhsul 1">
+        <div class="product-info">
+          <h3>Smart Saat</h3>
+          <p>Qiymət: 129 AZN</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x180?text=Məhsul+2" alt="Məhsul 2">
+        <div class="product-info">
+          <h3>Bluetooth Qulaqlıq</h3>
+          <p>Qiymət: 69 AZN</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x180?text=Məhsul+3" alt="Məhsul 3">
+        <div class="product-info">
+          <h3>PowerBank</h3>
+          <p>Qiymət: 39 AZN</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    © 2025 VoltX Store — Bütün hüquqlar qorunur
+  </footer>
+</body>
+</html>
